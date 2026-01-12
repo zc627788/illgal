@@ -1,5 +1,7 @@
 # Illegal Behavior Classification Pipeline
 
+[中文文档](README_CN.md)
+
 This repository contains Python scripts for classifying illegal administrative penalty records using AI models.
 
 ## Repository Structure
