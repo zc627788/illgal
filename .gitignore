@@ -1,0 +1,26 @@
+# Ignore model files
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.pkl
+*.joblib
+my_ai_necessity_classifier/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
