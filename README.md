@@ -42,6 +42,19 @@ illgal/
 2. Uses SetFit contrastive learning to train on text pairs
 3. Outputs a classifier that predicts whether new records need AI processing
 
+### predict.py
+
+**Purpose**: Use the trained SetFit model to batch predict `isNeedAI` for new documents.
+
+**Usage**:
+```bash
+python predict.py --input <input.csv> --output <output.csv> --model ./my_ai_necessity_classifier
+```
+
+**Input**: CSV file with `text_combined` column (or specify with `--text-column`)
+
+**Output**: CSV file with added `need_ai` column (0 = rule-based, 1 = needs AI)
+
 ---
 
 ## 2. ai_request/ - Third-party AI Classification

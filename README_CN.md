@@ -41,6 +41,19 @@ illgal/
 2. 使用 SetFit 对比学习在文本对上训练
 3. 输出分类器，预测新记录是否需要AI处理
 
+### predict.py - 批量预测
+
+**用途**：使用训练好的 SetFit 模型批量预测新文档的 `isNeedAI`。
+
+**使用方法**：
+```bash
+python predict.py --input <输入.csv> --output <输出.csv> --model ./my_ai_necessity_classifier
+```
+
+**输入**：包含 `text_combined` 列的CSV文件（或用 `--text-column` 指定）
+
+**输出**：添加 `need_ai` 列的CSV文件（0 = 规则处理，1 = 需要AI）
+
 ---
 
 ## 2. ai_request/ - 第三方AI分类
